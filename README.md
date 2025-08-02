@@ -55,4 +55,28 @@ Support easy onboarding for new QA or dev team members.
 Enable early bug detection and faster feedback cycles during development.
 
 This project reflects industry best practices for automation frameworks and is ideal for teams aiming to adopt test automation or scale existing efforts. Whether you're testing a responsive web app or integrating with CI pipelines, this WebdriverIO setup provides a solid foundation for quality assurance.
+  
+---
+
+## 🏃 How to Run Tests
+
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+2. **Run all tests:**
+   ```sh
+   npx wdio run ./wdio.conf.ts
+   ```
+
+3. **Run a specific test file:**
+   ```sh
+   npx wdio run ./wdio.conf.ts --spec ./test/specs/your-test-file.e2e.ts
+   ```
+
+4. **View Allure report (if enabled):**
+   ```sh
+   npx allure generate allure-results --clean && npx allure open
+   ```
 
