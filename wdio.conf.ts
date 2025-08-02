@@ -52,6 +52,8 @@ export const config: WebdriverIO.Config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
+        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
+        "wdio:maxInstances": 5,
         browserName: 'chrome'
     }],
 
