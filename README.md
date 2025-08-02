@@ -79,4 +79,9 @@ This project reflects industry best practices for automation frameworks and is i
    ```sh
    npx allure generate allure-results --clean && npx allure open
    ```
+   on window powershell use:
+
+   ```sh
+   npx allure generate allure-results --clean; npx allure open
+   ```
 
